@@ -1,6 +1,7 @@
 package net.daioner.stuffandstuff;
 
 import com.mojang.logging.LogUtils;
+import net.daioner.stuffandstuff.block.ModBlocks;
 import net.daioner.stuffandstuff.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,6 +36,7 @@ public class StuffAndStuff {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -53,6 +55,10 @@ public class StuffAndStuff {
             event.accept(ModItems.BISIO);
             event.accept(ModItems.RAWBISIO);
             event.accept(ModItems.BISIOLLA);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BISIO_ORE);
         }
     }
 
