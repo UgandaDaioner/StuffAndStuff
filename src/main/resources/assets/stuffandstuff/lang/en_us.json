@@ -4,5 +4,7 @@
   "item.stuffandstuff.bisiolla": "Bisiolla",
 
   "block.stuffandstuff.bisio_ore": "Bisio Ore",
-  "block.stuffandstuff.bisio_block": "Block Of Bisio"
+  "block.stuffandstuff.bisio_block": "Block Of Bisio",
+
+  "creativetab.stuffandstuff.stuffandstuff_creative_tab": "Stuff And Stuff"
 }

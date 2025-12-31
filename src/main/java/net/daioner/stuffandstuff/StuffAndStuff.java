@@ -2,6 +2,7 @@ package net.daioner.stuffandstuff;
 
 import com.mojang.logging.LogUtils;
 import net.daioner.stuffandstuff.block.ModBlocks;
+import net.daioner.stuffandstuff.item.ModCreativeModeTabs;
 import net.daioner.stuffandstuff.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,6 +36,8 @@ public class StuffAndStuff {
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -51,16 +54,7 @@ public class StuffAndStuff {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BISIO);
-            event.accept(ModItems.RAWBISIO);
-            event.accept(ModItems.BISIOLLA);
-        }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.BISIOORE);
-            event.accept(ModBlocks.BISIOBLOCK);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
