@@ -18,6 +18,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAWBISIO = ITEMS.register("raw_bisio",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> BISIETTO = ITEMS.register("bisietto",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> BISIOLLA = ITEMS.register("bisiolla",
             () -> new Item(new Item.Properties()));
 

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 500,
+  "experience": 2,
+  "ingredient": {
+    "item": "stuffandstuff:raw_bisio"
+  },
+  "result": {
+    "id": "stuffandstuff:bisio"
+  }
+}
