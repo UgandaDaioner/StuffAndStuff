@@ -18,17 +18,21 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, StuffAndStuff.MOD_ID);
 
-    public static final RegistryObject<Block> BISIO_ORE = registerBlock("bisio_ore",
+    public static final RegistryObject<Block> BISIOORE = registerBlock("bisio_ore",
             () -> new Block(BlockBehaviour.Properties.of()
             .strength(2.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final RegistryObject<Block> BISIOBLOCK = registerBlock("bisio_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5.0F).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registryBlockItem(name, toReturn);
+        registerBlockItem(name, toReturn);
         return toReturn;
     }
 
-    private static <T extends Block> void registryBlockItem(String name, RegistryObject<T> block) {
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 

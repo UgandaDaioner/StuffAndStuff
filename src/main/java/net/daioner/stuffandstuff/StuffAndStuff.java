@@ -58,7 +58,8 @@ public class StuffAndStuff {
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.BISIO_ORE);
+            event.accept(ModBlocks.BISIOORE);
+            event.accept(ModBlocks.BISIOBLOCK);
         }
     }
 
