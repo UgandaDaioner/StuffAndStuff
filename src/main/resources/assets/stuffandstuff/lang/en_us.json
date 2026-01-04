@@ -3,8 +3,11 @@
   "item.stuffandstuff.raw_bisio": "Raw Bisio",
   "item.stuffandstuff.bisiolla": "Bisiolla",
   "item.stuffandstuff.bisietto": "Bisietto",
+  "item.stuffandstuff.raw_bisietto": "Raw Bisietto",
+  "item.stuffandstuff.filter": "Filter",
 
   "block.stuffandstuff.bisio_ore": "Bisio Ore",
+  "block.stuffandstuff.bisietto_ore": "Bisietto Ore",
   "block.stuffandstuff.bisio_block": "Block Of Bisio",
 
   "creativetab.stuffandstuff.stuffandstuff_creative_tab": "Stuff And Stuff"

@@ -21,7 +21,13 @@ public class ModItems {
     public static final RegistryObject<Item> BISIETTO = ITEMS.register("bisietto",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RAWBISIETTO = ITEMS.register("raw_bisietto",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> BISIOLLA = ITEMS.register("bisiolla",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FILTER = ITEMS.register("filter",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

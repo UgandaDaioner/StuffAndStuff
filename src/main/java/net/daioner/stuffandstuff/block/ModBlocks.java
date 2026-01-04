@@ -2,9 +2,11 @@ package net.daioner.stuffandstuff.block;
 
 import net.daioner.stuffandstuff.StuffAndStuff;
 import net.daioner.stuffandstuff.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,8 +21,12 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, StuffAndStuff.MOD_ID);
 
     public static final RegistryObject<Block> BISIOORE = registerBlock("bisio_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(3, 5), BlockBehaviour.Properties.of()
             .strength(2.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> BISIETTOORE = registerBlock("bisietto_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1, 2), BlockBehaviour.Properties.of()
+                    .strength(1.5F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> BISIOBLOCK = registerBlock("bisio_block",
             () -> new Block(BlockBehaviour.Properties.of()

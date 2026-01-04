@@ -20,11 +20,14 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.stuffandstuff.stuffandstuff_creative_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BISIO.get());
-                        output.accept(ModItems.BISIETTO.get());
                         output.accept(ModItems.RAWBISIO.get());
+                        output.accept(ModItems.BISIETTO.get());
+                        output.accept(ModItems.RAWBISIETTO.get());
                         output.accept(ModBlocks.BISIOORE.get());
+                        output.accept(ModBlocks.BISIETTOORE.get());
                         output.accept(ModBlocks.BISIOBLOCK.get());
                         output.accept(ModItems.BISIOLLA.get());
+                        output.accept(ModItems.FILTER.get());
 
                     }).build());
 

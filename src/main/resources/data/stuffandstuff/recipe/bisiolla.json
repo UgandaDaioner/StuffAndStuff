@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "stuffandstuff:bisietto"
+    },
+    "B": {
+      "item": "minecraft:paper"
+    },
+    "C": {
+      "item": "stuffandstuff:filter"
+    }
+  },
+  "pattern": [
+    " BB",
+    "CAA",
+    " BB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "stuffandstuff:bisiolla"
+  }
+}
